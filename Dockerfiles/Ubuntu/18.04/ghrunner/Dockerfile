@@ -1,7 +1,7 @@
 ## Based on https://github.com/myoung34/docker-github-actions-runner/blob/clair/Dockerfile
 
 # Base image
-FROM didstopia/base:ubuntu-18.04
+FROM vladkolodka/base:ubuntu-18.04
 
 # Maintainer information
 LABEL maintainer="Didstopia <support@didstopia.com>"
