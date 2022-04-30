@@ -63,7 +63,7 @@ else
 fi
 
 # Pull the latest version of docker-make
-docker pull didstopia/docker-make:latest
+docker pull vladkolodka/docker-make:latest
 
 # Run docker-make with the custom Docker configuration file 
 docker run \
@@ -72,7 +72,7 @@ docker run \
   -v "${HOME}/.docker":/root/.docker \
   -v ${DOCKER_CUSTOM_CONFIG}:/root/.docker/config.json \
   -v /var/run/docker.sock:/var/run/docker.sock \
-  -v "$(pwd)":/usr/src/app didstopia/docker-make:latest \
+  -v "$(pwd)":/usr/src/app vladkolodka/docker-make:latest \
   docker-make -rm "$@"
 
 # Disable error handling (useful when running with "source")
